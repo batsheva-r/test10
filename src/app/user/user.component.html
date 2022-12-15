@@ -1,0 +1,20 @@
+<div>{{user.name}}</div>
+<button (click)="openMoreDetails()">read more...</button>
+
+<div *ngIf="isMoreview">
+{{user.name}}
+{{user.email}}
+{{user.phone}}
+{{user.address.street}}
+{{user.address.suite}}
+{{user.address.city}}
+{{user.address.zipcode}}
+{{user.address.geo.lat}}
+{{user.address.geo.lng}}
+{{user.website}}
+{{user.company.name}}
+{{user.company.catchPhrase}}
+{{user.company.bs}}
+{{user.phone}}
+
+</div>

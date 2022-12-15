@@ -1,0 +1,5 @@
+<div *ngFor="let user of usersList">
+<app-user (click)="showTaskToUser(user.id)" [user]="user"></app-user>
+</div>
+
+<div><app-task-list [userId]="userId"></app-task-list></div>

@@ -1,0 +1,6 @@
+<div *ngFor="let post of postList">
+    <app-post (click)="selectedPost(post.id)" [post]="post"></app-post>
+</div>
+
+
+<app-comment-list [postId]="postId"></app-comment-list>
